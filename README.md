@@ -1,2 +1,5 @@
 # CursoEOI
-Preparación curso
+## Trello
+## Editores
+## GitHub
+## Introducción HTLM5 
