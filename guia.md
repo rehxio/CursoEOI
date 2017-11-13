@@ -91,4 +91,87 @@ Etiquetas que se utilizan para agrupar y organizar información.
 ### Etiquetas para listas
 * <ul> sin orden <ol> con orden y esta ultima permite varios atributos opcionales para modificar la forma de ordenarlos. para cada item se usa la etiqueta <li>
 
+## Enlaces o hipervinculos
+Una de las etiquetas mas importante de HTM es <a>. 
+Se utiliza para crear enlaces, vinculos o hipervinculos. La idea es establecer una referencia a una direccion o URL que queremos mostrar.
+Debe tener como minimo el atributo href, donde se especifica la direccion al documento.
 
+### Partes de una URL
+#### Protocolo: 
+Existen varios tipos y es la parte inicial de la URL, el mas utilizado es http:// y el https:// para cifrar información. Al escribir la URL no debemos olvidarnos del protocolo ya que el vinculo podria no funcionar correctamente.
+
+#### Dominio:
+El dominio se compone de un subdominio (opcional), el nombre del dominio y el dominio de nivel superior o TLD.
+www -> subdominio utilizado tradicionalmente para las webs.
+.com .net .org . es .com.es .cat y otras -> TLD para los sitios webs.
+
+#### Ruta: 
+Es equivalente a las carpetas o directorios donde almacenamos nuestros archivos.
+
+#### Pagina web:
+El documento html, fichero con la extencion .html
+
+#### Ancla:
+Fragmento de tecto pecedido del caracter #
+El navegador busca la etiqueta HTML que tenga un atributo id con ese tecto y posiciona al usuario en esa parte de la pagina.
+opcional
+
+### Rutas alternativas o absolutas
+ver transparencia
+
+## Etiquetas semanticas
+En versiones anteriores se solia utilizar <div> para hacer las agrupaciones de secciones y para identificarrlas y quedara un poco mas claro se añadian los atributos id y class.
+En HTML5 se introducen una serie de etiquetas de agrupacion que funcionan igual que el <div> pero que ademas tienen un significado semantico ya que indican la naturaleza del contenido que agrupan.
+Esto ayuda a que cualquier navegador, robor de biscador o aplicaicon o sistema informatico sea capaz de leer el documento y conocer perfectamente la naturaleza de dicha seccion.
+
+-> 100% recomendable escuchar http://wecodesignpodcast.com/2017/09/05/accesibilidad-practica/
+
+## Etiquetas de tablas
+Etiquetas basicas para crear tablas de la forma mas sencilla posible.
+<table> <tr> <td> <th>
+    
+### Combinar celdas de una tabla
+Cada etiqueta <td> y <th> puede incluir una serie de atributos para modificar su comportamiento o para establecer relaciones semanticas entre celdas. Probablemente, las mas interesantes sean colspan y rowspan.
+Esto sirve para poder indicar que ciertas columnas/filas abarque mas espacio y se combinen.
+    
+Tambien existen unas etiquetas para la organizacion de tablas 
+<thead> para la cabecera, con cada columna
+<tbody> para el cuerpo de la tabla, cada celda.
+<tfoot> pie de la tabla
+    
+## Etiquetas de imagenes
+Hay que tener en cuenta que pueden haber dos tipos: de contenido o de decoracion
+De contenido se indican con la etiqueta <img> para las de decoracion lo mejor es utilizar CSS para esto.
+Los atributos src y alt son obligatorios. Los tamaños no son necesarios.
+Formatos soportados PNG JPG SVG GIF...
+
+## Etiquetas de audio
+Se usa la etiqueta <audio> y el atributo src obligatorio. Existen otros atrobutos para que precarge, se auto-reproduzca, pare, etc
+    
+## Etiquetas de video
+Se usa la etiqueta <video> y se utiliza igual que la de audio.
+Tener en cuenta que para videos externos como pueden ser Youtube/Vimeo etc, es necesario usar la etiqueta <iframe> en lugar de la de video
+    
+No hacer autoplay, preferiblemente, sobretodo los sonidos
+    
+## Etiquetas de cabecera
+<head> contiene etiquetas de metadatos documentos.
+
+### Titulo y codificacion
+Es recomendame meter en el <head>  minimo las siguientes etiquetas:
+    <title> titulo de documento</title>
+    <meta charset="utf-8">
+   
+Importante utilizar siempre la misma codificacion en todos los documentos. Evitando problemas con vocales acentuadas o caracteres con ñ, ¿, ¡ u otros.
+Para evitar problemas de codificacion, incluir el meta indicado, guardar el archivo HTML con codificacion UTF-8
+
+### Favicons 
+No esta definida en las especificaciones por lo que cada navegador (y sistema operativo) la implementa como quiere. Hay navegadores que solo soportan favicon en formato PNG otros que solo soportan unas resoluciones... 
+Recomendable https://realfavicongenerator.net/
+
+## Etiquetas de metadatos
+Atraves de los atributos name y content podemos indicar una gran cantidad de metadatos al documentos.
+
+## Etiquetas interactivas
+En dichas etiquetas el usaurio debe tomar parte de forma activa para activarlas o utilizarlas. Son elementos desplegables, menus contextuales, dialogos emergentes, etc..
+    
